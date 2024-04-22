@@ -1,5 +1,5 @@
 ---------
-⚠️ This repository isn’t maintained anymore.
+⚠️  Used within shared GH workflows: https://github.com/adjust/githubWorkflows/blob/main/.github/actions/jiraComment/action.yml
 ---------
 
 # Jira Comment
