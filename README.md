@@ -1,5 +1,5 @@
 ---------
-⚠️  Used within shared GH workflows: https://github.com/adjust/githubWorkflows/blob/main/.github/actions/jiraComment/action.yml
+⚠️  Used within shared [jiraComment](https://github.com/adjust/githubWorkflows/blob/main/.github/actions/jiraComment/action.yml) action
 ---------
 
 # Jira Comment
@@ -16,10 +16,10 @@ To add comment to an issue you need to specify an issue key and a comment as act
 
 ```yaml
 - name: Comment on issue
-  uses: atlassian/gajira-comment@v3
+  uses: adjust/gajira-comment@v4
   with:
-  issue: INC-2
-  comment: ${{ github.event.pusher.name }} pushed to repository: ${{ github.event.repository.full_name }}
+    issue: FPLAT-410
+    comment: ${{ github.event.pusher.name }} pushed to repository: ${{ github.event.repository.full_name }}
 ```
 
 You can interpolate fields from [GitHub event which triggered the workflow](https://help.github.com/en/articles/contexts-and-expression-syntax-for-github-actions#github-context) into a comment body. For example, if you set your workflow to be triggered on the `push` event, you can specify the pusher name in comment body by including `${{ github.event.pusher }}` field from the [push](https://developer.github.com/v3/activity/events/types/#pushevent) event:

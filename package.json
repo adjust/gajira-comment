@@ -1,6 +1,6 @@
 {
-  "name": "@atlassian/gajira-comment",
-  "version": "3.0.1",
+  "name": "@adjust/gajira-comment",
+  "version": "4.0.1",
   "description": "Add a comment",
   "main": "index.js",
   "scripts": {
